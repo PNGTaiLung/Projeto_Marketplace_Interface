@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="Mask.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="EasyBiteLogo.png" alt="Logo">
+    </div>
+    <h1>Cadastro</h1>
+    <form action="processar_cadastro.php" method="post">
+        <label for="email">Email Institucional:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="periodo">Período:</label>
+        <select id="periodo" name="periodo">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
